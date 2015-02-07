@@ -49,8 +49,9 @@ gem 'devise'
 gem 'bcrypt', '~> 3.1.7'
 
 #rails_layout for bootstrap or zorb foundation
-gem 'rails_layout'
-
+group :production do
+  gem 'rails_layout'
+end
 
 gem 'figaro'
 
