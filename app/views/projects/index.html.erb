@@ -1,0 +1,26 @@
+<body>
+  <div class="container">
+    <div class="row text-center">
+        <div class="col-md-10 col-md-offset-1">
+          <h1>FreaknGenius</h1>          
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <img src="/assets/fng.jpg" alt="FreaknGenius" />
+      </div>
+    </div>
+    <br>
+    <div class="row well">
+      <% @projects.each do |p| %>
+        <div class="col-md-4">
+          <h1><%= link_to p.title, p %></h1>
+          <p><%= p.body %></p>
+        </div>  
+      <% end %>  
+    </div>
+  </div>  
+
+
+</body>
